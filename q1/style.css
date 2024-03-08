@@ -1,0 +1,77 @@
+
+table {
+    font-family: arial, sans-serif;
+      border-collapse:collapse;
+      width: 100%; 
+    }
+    
+    td, th {
+      border: 1px solid #000000;
+      text-align: left;
+      padding: 4px;
+    }
+    .CV {
+        display: grid;
+        width  : 50%;
+        height: 700px;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows   : 1fr 1fr 1fr 1fr;
+        box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+        grid-template-areas  :
+            "photo education"
+            "name work"
+            "about work"
+            "skills community";
+    }
+    .grid-area {
+        padding: 1em 1em 1em 1em;
+        border : 1px black solid;
+    }
+    
+    .name {
+        grid-area: name;
+        background-color: rgb(53, 109, 145);
+    }
+    
+    .photo {
+        grid-area       : photo;
+        background-color: rgb(53, 109, 145);
+    }
+    
+    .about {
+        grid-area       : about;
+        background-color: rgb(53, 109, 145);
+    }
+    
+    .work {
+        grid-area: work;
+    }
+    
+    .skills {
+        grid-area       : skills;
+        background-color: rgb(53, 109, 145);
+    }
+    
+    .education {
+        grid-area       : education;
+        background-image: url("C:/Users/Imad/Desktop/CV grid/Background img1.jpg");
+    }
+    
+    .community {
+        grid-area: community;
+    }
+    
+    /* align cv to center of page */
+    
+    .wrapper {
+        padding       : 0;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+    h3 {
+        font-family: serif;
+    }
+    p {
+        font-family: Georgia;
+    }
